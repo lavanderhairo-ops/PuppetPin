@@ -7,7 +7,8 @@ smearing. Separate parts of the image get separate meshes.
 Free and open source (MIT license, see [LICENSE](LICENSE)). Windows, DaVinci Resolve /
 Resolve Studio, Edit and Fusion pages.
 
-**Just want to use it?** Download the release zip, unzip it, close Resolve and run
+**Just want to use it?** Download `PuppetPin-1.8-Windows.zip` from
+[Releases](https://github.com/lavanderhairo-ops/PuppetPin/releases), unzip it, close Resolve and run
 `Install.bat`. The zip's `README.txt` is the user guide. The rest of this page is for
 building and changing the code.
 
