@@ -12,8 +12,8 @@ if errorlevel 1 (
     exit /b
 )
 
-tasklist /FI "IMAGENAME eq Resolve.exe" 2>nul | find /I "Resolve.exe" >nul
-if not errorlevel 1 (
+powershell -NoProfile -Command "if (Get-Process -Name Resolve -ErrorAction SilentlyContinue) { exit 1 }"
+if errorlevel 1 (
     echo DaVinci Resolve is running. Close it and run Install.bat again.
     pause
     exit /b 1
